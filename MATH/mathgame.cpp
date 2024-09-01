@@ -35,7 +35,7 @@ int main(){
                std::cout << "User created successfully. Please login now.\n";
             }
             break;
-         case 2: //login //somehow non funzioona
+         case 2: //login 
             log = tryLogin(user, pwd);
             if (log == -1) // User does not exist
                std::cerr << "Username does not exist, register?\n";  
@@ -50,7 +50,7 @@ int main(){
                            << "1. New game\n" << "2. See stats\n" << "3. Logout\n" << "> ";
 
                   if (!check_range(chc, 1,3)) continue;
-                  if(chc==1){ //perché si rompe?
+                  if(chc==1){ 
                      int pts = game();
                      usr.update_stats(pts);
                     }
@@ -58,7 +58,7 @@ int main(){
                      usr.show_stats();
                    }
                     else{ // quit
-                        if(logout(usr)) break; //handle user data!
+                        if(logout(usr)) break; 
                   } 
                   std::cin.clear();
                } // main menu for end
