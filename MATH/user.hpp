@@ -14,5 +14,4 @@ class User{
    void show_stats();
    void update_stats(int pts);
    int update_file();
-   void create_file();
 };
