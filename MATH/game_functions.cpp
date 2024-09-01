@@ -32,7 +32,7 @@ int turn(){
    int res = operation();
    int guess;
    int t = TRIES;
-   for(;;){ //inserire quit?
+   for(;;){ 
       std::cout << "> ";
       std::cin >> guess;
       if(std::cin.fail()){
